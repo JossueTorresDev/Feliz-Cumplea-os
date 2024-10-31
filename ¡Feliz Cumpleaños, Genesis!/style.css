@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.main-message {
+    font-size: 2.5rem;
+    color: #fff;
+    animation: glow 1s infinite alternate;
+}
+
+.gift-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff5f6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gift-button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 20px #ff5f6d; }
+}
